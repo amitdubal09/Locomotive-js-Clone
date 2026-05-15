@@ -6,11 +6,12 @@ let navItems = document.querySelectorAll("nav ul li");
 gsap.from(Nav, {
     opacity: 0, x: 1
 })
+
 function Animation() {
 
     window.addEventListener("scroll", () => {
 
-        if (window.scrollY < 750 || window.scrollY > 2600) {
+        if (window.scrollY < 800 || window.scrollY > 2600) {
 
             Nav.style.backgroundColor = "#202DED";
 
@@ -73,8 +74,8 @@ gsap.to(".slider h1", {
     scrollTrigger: {
         trigger: ".slider",
         start: "top bottom",
-        end: "top 50%",
-        scrub: 1
+        end: "top top",
+        scrub: 3,
     }
 });
 gsap.from(".row", {
@@ -114,31 +115,58 @@ gsap.from('#list span', {
 })
 
 function CircleAnimation() {
+    let tl = gsap.timeline();
 
-    gsap.from("#sone", {
+    tl.from("#sfour", {
         scale: 0,
-        rotation: -360,
         ease: "none",
         scrollTrigger: {
             trigger: ".circle-anime",
-            start: "top 90%",
-            end: "top 75%",
+            start: "top 45%",
+            end: "top 30%",
+            scrub: 3,
+        }
+    })
+
+    tl.from("#sfive", {
+        scale: 0,
+        rotation: 360,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".circle-anime",
+            start: "top 85%",
+            end: "top 35%",
+            markers: true,
             scrub: 3
         }
     })
 
-    gsap.from("#stwo", {
+    tl.from("#sone", {
+        scale: 0,
+        duration: 1,
+        rotation: -360,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".circle-anime",
+            start: "top 80%",
+            end: "top 70%",
+            scrub: 3,
+        }
+    })
+
+
+    tl.from("#stwo", {
         scale: 0,
         ease: "none",
         scrollTrigger: {
             trigger: ".circle-anime",
             start: "top 75%",
-            end: "top 60%",
-            scrub: 3
+            end: "top 20%",
+            scrub: 3,
         }
     })
 
-    gsap.from("#sthree", {
+    tl.from("#sthree", {
         scale: 0,
         ease: "none",
         scrollTrigger: {
@@ -149,30 +177,7 @@ function CircleAnimation() {
         }
     })
 
-    gsap.from("#sfour", {
-        scale: 0,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".circle-anime",
-            start: "top 45%",
-            end: "top 30%",
-            scrub: 3
-        }
-    })
-
-    gsap.from("#sfive", {
-        scale: 0,
-        rotation: 360,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".circle-anime",
-            start: "top 30%",
-            end: "top 15%",
-            scrub: 3
-        }
-    })
-
-    gsap.from("#ssix", {
+    tl.from("#ssix", {
         scale: 0,
         ease: "none",
         scrollTrigger: {

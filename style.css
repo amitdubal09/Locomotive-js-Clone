@@ -169,7 +169,7 @@ section {
 
 
 .bottom-section {
-    margin-top: 18%;
+    margin-top: 22%;
     display: flex;
     position: relative;
 }
@@ -227,10 +227,10 @@ section {
 
 .notice {
     place-items: center;
-    height: 100vh;
-    font-size: 80px;
+    height: 80vh;
+    font-size: 70px;
     color: #202DED;
-    line-height: 1.2;
+    line-height: 1;
     display: grid;
     grid-template-columns: 25% 75%;
 }
@@ -325,39 +325,17 @@ section {
     font-weight: 300;
 }
 
+/* .gsap-marker-start,
+.gsap-marker-end,
+.gsap-marker-scroller-start,
+.gsap-marker-scroller-end {
+    top: 50% !important;
+} */
+
 .edit {
     font-family: "china", sans-serif;
     font-weight: 500;
     font-size: 18px;
-}
-
-.in-view {
-    height: 100vh;
-    background-color: #202DED;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#in-view-1 {
-    margin-right: 2%;
-    border-top: 2px solid white;
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    margin-left: 30%;
-    max-width: 75%;
-    justify-content: space-between;
-}
-
-#in-view-2 {
-    font-family: "india-regular", sans-serif;
-    font-weight: 300;
-    margin-right: 15%;
-    font-size: 45px;
-    line-height: 1.1;
 }
 
 .circle-anime {
@@ -375,6 +353,7 @@ section {
 
 #sone {
     margin-left: -60px;
+    width: 340px;
     margin-top: 10%;
 }
 
@@ -403,4 +382,38 @@ section {
 #ssix {
     position: absolute;
     bottom: 5%;
+}
+
+.sub-inview {
+    font-family: "india-regular";
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 20px;
+    width: 73%;
+}
+.abc{
+    margin-top: 5%;
+}
+
+.sub-inview p {
+    font-size: 13px;
+}
+
+#in-view-2-sub {
+    font-size: 22px;
+    width: 35%;
+}
+
+.xyz {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-top: 30px;
+}
+
+#in-view-3-sub {
+    max-width: 30%;
 }
