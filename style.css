@@ -1,0 +1,406 @@
+@font-face {
+    font-family: "china";
+    src: url("/font/HelveticaNowDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "india";
+    src: url("/font/PPLocomotiveNew-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "india-regular";
+    src: url("/font/HelveticaNowDisplay-Regular.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    background-color: #202DED;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    top: 0;
+    z-index: 200;
+}
+
+nav ul li {
+    color: white;
+    list-style: none;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+section {
+    background-color: #202DED;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 60px;
+}
+
+.section-1 {
+    font-family: "Helvetica Now Display", sans-serif;
+    /* border: 1px solid white; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90vh;
+    padding-left: 20px;
+}
+
+.btns-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.github-btn {
+    background-color: white;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.doc-btn span,
+.github-btn span {
+    font-size: 25px;
+}
+
+#hidden {
+    display: none;
+}
+
+.doc-btn:hover #doc-icn,
+.github-btn:hover #git-icn {
+    display: none;
+}
+
+.github-btn:hover {
+    background-color: #202DED;
+    border: 1px solid white;
+}
+
+.github-btn:hover a {
+    color: #ffffff;
+}
+
+.doc-btn:hover #hidden,
+.github-btn:hover #hidden {
+    display: initial;
+}
+
+.github-btn a {
+    color: #202DED;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.doc-btn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.doc-btn:hover a {
+    color: #202DED;
+}
+
+.doc-btn {
+    margin-top: 10px;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.doc-btn:hover {
+    background-color: white;
+}
+
+.section-2 {
+    color: white;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.section-2 span {
+    display: inline-block;
+}
+
+.section-2 img {
+    width: 30%;
+}
+
+.name {
+    font-size: 110px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+
+.bottom-section {
+    margin-top: 18%;
+    display: flex;
+    position: relative;
+}
+
+#para {
+    width: 45%;
+    font-size: 20px;
+    color: #898FE9;
+}
+
+#version {
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 1px;
+}
+
+.slider {
+    color: #202DED;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #202DED;
+    padding: 20px 0;
+}
+
+.slider h1 {
+    white-space: nowrap;
+    width: max-content;
+
+    font-size: 7vw;
+    font-family: sans-serif;
+
+    transform: translateX(-25%);
+}
+
+
+.table {
+    margin-left: 25%;
+}
+
+.row {
+    display: grid;
+    padding: 10px 0px;
+    grid-template-columns: 35% 65%;
+    border-top: 1px solid #202DED;
+    color: #202DED;
+    gap: 30px;
+}
+
+.row p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.notice {
+    place-items: center;
+    height: 100vh;
+    font-size: 80px;
+    color: #202DED;
+    line-height: 1.2;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.animated-text {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#down {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    top: 10%;
+    color: #a4a7d3;
+    width: 17%;
+    font-size: 21px;
+}
+
+#list {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 80px;
+    line-height: 1.15;
+}
+
+#list span {
+    display: inline-block;
+}
+
+.blue-gray {
+    color: #a4a7d3;
+}
+
+.blue {
+    color: #202DED;
+}
+
+.one {
+    margin-left: 15.5%;
+}
+
+.two {
+    margin-left: calc(15.5% * 2);
+}
+
+.three {
+    margin-left: calc(15.5% * 3);
+}
+
+.four {
+    margin-left: calc(15.5% * 4);
+}
+
+.five {
+    margin-left: calc(15.5% * 5);
+}
+
+.six {
+    margin-left: calc(15.5% * 6);
+}
+
+.builtintools {
+    min-height: 100vh;
+    background-color: #202DED;
+    color: white;
+}
+
+.start-tool {
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+.start-tool span {
+    display: block;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.start-tool h1 {
+    font-family: "india", sans-serif;
+    font-size: 19vw;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.edit {
+    font-family: "china", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.in-view {
+    height: 100vh;
+    background-color: #202DED;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#in-view-1 {
+    margin-right: 2%;
+    border-top: 2px solid white;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 30%;
+    max-width: 75%;
+    justify-content: space-between;
+}
+
+#in-view-2 {
+    font-family: "india-regular", sans-serif;
+    font-weight: 300;
+    margin-right: 15%;
+    font-size: 45px;
+    line-height: 1.1;
+}
+
+.circle-anime {
+    height: 100vh;
+    min-width: 100%;
+    white-space: nowrap;
+    /* overflow-y: hidden; */
+    position: relative;
+}
+
+.circle-anime svg {
+    width: 360px;
+    height: auto;
+}
+
+#sone {
+    margin-left: -60px;
+    margin-top: 10%;
+}
+
+#stwo {
+    bottom: 8%;
+    left: 15%;
+    position: absolute;
+}
+
+#sthree {
+    margin-bottom: 70px;
+    margin-left: 17vw;
+}
+
+#sfour {
+    position: absolute;
+    top: -20%;
+}
+
+#sfive {
+    margin-left: 20%;
+    position: absolute;
+    top: 1%;
+}
+
+#ssix {
+    position: absolute;
+    bottom: 5%;
+}
