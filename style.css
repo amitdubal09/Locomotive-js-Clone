@@ -417,3 +417,10 @@ section {
 #in-view-3-sub {
     max-width: 30%;
 }
+.rectangle-anime{
+    /* background-color: red; */
+}
+.rectangle-anime svg{
+    width: calc(24 * var(--vw, 1vw));;
+    height: 20%;
+}
